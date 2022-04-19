@@ -9,7 +9,7 @@ public class informeRendimento {
 
     public static void rodarPrograma() {
         Scanner leitorCad = new Scanner(System.in);
-        String nomeSim = "";
+        String nomeInquilino = "";
         String profissaoSim = "";
         Double[] listaSalarios = new Double[12];
         for (int i = 0; i < 1000; i++) {     
@@ -18,7 +18,7 @@ public class informeRendimento {
 
             if(selecao == 1){
                 System.out.println("Nome Sim: ");
-                nomeSim = leitorCad.next();
+                nomeInquilino = leitorCad.next();
                 System.out.println("Cargo do(a) Sim: ");
                 profissaoSim = leitorCad.next();
                 for (i = 0; i < listaSalarios.length; i++) {
@@ -27,7 +27,7 @@ public class informeRendimento {
                 }
             }
             if(selecao == 2){
-                System.out.println("::         CADASTRO DO(A) SIM         ::\n----------------------------------------\nNome: "+nomeSim+"\nCargo: "+profissaoSim+"\n. . . . . . . . . . . . . . . . . . . . \n----------------------------------------\n");
+                System.out.println("::         CADASTRO DO(A) SIM         ::\n----------------------------------------\nNome: "+ nomeInquilino +"\nCargo: "+profissaoSim+"\n. . . . . . . . . . . . . . . . . . . . \n----------------------------------------\n");
             
             }
             if(selecao == 3){
